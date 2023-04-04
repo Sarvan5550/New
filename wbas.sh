@@ -34,3 +34,8 @@ sudo modprobe 8188eu
 else 
 clear
 fi
+read -p'Ready to go with your adaptor once you reboot it y/n :' sl_l
+if [ $sl_l = y]
+then 
+ reboot
+ fi

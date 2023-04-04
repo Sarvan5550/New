@@ -15,21 +15,25 @@ sleep 1
   echo -e "${YELLOW}(Check out your new wallpapers)${CYAN} installed wallpapers"
   
   echo 
-       'done basics
-        done basics
-        done basics
-        done basics
-        done basics
-        done basics'
+Done basics
+Done basics
+Done basics
+Done basics
+Done basics
+Done basics
+            
+      
+      
  echo '.............................................'       
         
 read -p 'Do you have a TP-link adaptor Y/n :' sr_l
+
 if [ $sr_l = y ]
 then
-echo 'Please connect your adpotor in 5sec'
-sleep 5
+ echo 'Please connect your adpotor in 5sec'
+ sleep 5
   git clone https://github.com/lwfinger/rtl8188eu
-cd rtl8188eu
+  cd rtl8188eu
 make
 sudo make install
 sudo modprobe 8188eu

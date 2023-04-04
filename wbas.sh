@@ -13,6 +13,7 @@ sleep 1
 # No Color
   NC=’\033\[0m’
   echo -e "${YELLOW}(Check out your new wallpapers)${CYAN} installed wallpapers"
+  
   echo 'done basics
         done basics
         done basics

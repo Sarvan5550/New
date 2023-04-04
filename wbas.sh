@@ -23,7 +23,7 @@ sleep 1
         done basics'
  echo '.............................................'       
         
-read -p '${YELLOW}Do you have a TP-link adaptor Y/n :' sr_l
+read -p 'Do you have a TP-link adaptor Y/n :' sr_l
 if [ $sr_l = y ]
 then
   git clone https://github.com/lwfinger/rtl8188eu

@@ -14,13 +14,14 @@ sleep 1
   NC=’\033\[0m’
   echo -e "${YELLOW}(Check out your new wallpapers)${CYAN} installed wallpapers"
   
-  echo 
+  echo ' 
 Done basics
 Done basics
 Done basics
 Done basics
 Done basics
 Done basics
+'
             
       
       
@@ -29,9 +30,10 @@ Done basics
 read -p 'Do you have a TP-link adaptor Y/n :' sr_l
 
 if [ $sr_l = y ]
+
 then
  echo 'Please connect your adpotor in 5sec'
- sleep 5
+ sleep 2
   git clone https://github.com/lwfinger/rtl8188eu
   cd rtl8188eu
 make

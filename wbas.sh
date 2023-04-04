@@ -35,10 +35,9 @@ then
  sleep 3 
   git clone https://github.com/lwfinger/rtl8188eu
   cd rtl8188eu
-make
-sudo make install
-sudo modprobe 8188eu
-
+   sudo make
+   sudo make install
+   sudo modprobe 8188eu
 read -p'Ready to go with your adaptor once you reboot it y/n :' sl_l
 
 elif [ $sl_l = y ]

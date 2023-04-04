@@ -14,12 +14,15 @@ sleep 1
   NC=’\033\[0m’
   echo -e "${YELLOW}(Check out your new wallpapers)${CYAN} installed wallpapers"
   
-  echo 'done basics
+  echo 
+       'done basics
         done basics
         done basics
         done basics
         done basics
         done basics'
+ echo '.............................................'       
+        
 read -p 'Do you have a TP-link adaptor Y/n :' sr_l
 if [ $sr_l = y ]
 then

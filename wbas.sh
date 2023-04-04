@@ -24,7 +24,7 @@ sleep 1
  echo '.............................................'       
         
 read -p 'Do you have a TP-link adaptor Y/n :'
-echo 'Please connect your afpotor'
+echo 'Please connect your adpotor'
 sleep 2
  sr_l
 if [ $sr_l = y ]

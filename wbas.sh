@@ -13,5 +13,20 @@ sleep 1
 # No Color
   NC=’\033\[0m’
   echo -e "${YELLOW}(Check out your new wallpapers)${CYAN} installed wallpapers"
-  
-  
+  echo 'done basics
+        done basics
+        done basics
+        done basics
+        done basics
+        done basics'
+read -p 'Do you have a TP-link adaptor Y/n :' sr_l
+if [ $sr_l = y ]
+then
+  git clone https://github.com/lwfinger/rtl8188eu
+cd rtl8188eu
+make
+sudo make install
+sudo modprobe 8188eu
+else 
+clear
+fi

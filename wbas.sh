@@ -27,7 +27,7 @@ Done basics
       
  echo '.............................................'       
         
-read -p 'Do you have a TP-link adaptor Y/n :' sr_l
+read -p 'Do you have a TP-link adaptor y/n :' sr_l
 
 if [ $sr_l = y ]
 then
@@ -40,7 +40,11 @@ sudo make install
 sudo modprobe 8188eu
 
 read -p'Ready to go with your adaptor once you reboot it y/n :' sl_l
+
 elif [ $sl_l = y ]
 then 
  reboot
+else 
+then 
+  exit
 fi

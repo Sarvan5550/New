@@ -23,22 +23,20 @@ sleep 1
         done basics'
  echo '.............................................'       
         
-read -p 'Do you have a TP-link adaptor Y/n :'
-echo 'Please connect your adpotor'
-sleep 2
- sr_l
+read -p 'Do you have a TP-link adaptor Y/n :' sr_l
 if [ $sr_l = y ]
 then
+echo 'Please connect your adpotor in 5sec'
+sleep 5
   git clone https://github.com/lwfinger/rtl8188eu
 cd rtl8188eu
 make
 sudo make install
 sudo modprobe 8188eu
-else 
-clear
-fi
 read -p'Ready to go with your adaptor once you reboot it y/n :' sl_l
 if [ $sl_l = y ]
 then 
  reboot
- fi
+ else 
+clear
+fi
